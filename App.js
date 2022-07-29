@@ -38,13 +38,13 @@ export default function App() {
         <FlatList
           data={courseGoals}
           alwaysBounceVertical={false}
-          renderItem={(itemData) => {
+          renderItem={(itemData) => (
             <GoalItem
               id={itemData.item.id}
               text={itemData.item.text}
               onDeleteGoal={deleteGoalHandler}
-            />;
-          }}
+            />
+          )}
           keyExtractor={(item, _) => {
             return item.id;
           }}

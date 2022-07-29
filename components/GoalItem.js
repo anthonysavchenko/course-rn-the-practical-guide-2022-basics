@@ -2,7 +2,7 @@ import { Pressable, StyleSheet, Text, View } from "react-native";
 
 function GoalItem(props) {
   return (
-    <Pressable onPress={props.onDeleteGoal.bind(this, props.id)}>
+    <Pressable android_ripple={{color: '#dddddd'}} onPress={props.onDeleteGoal.bind(this, props.id)}>
       <View style={styles.goalItem}>
         <Text style={styles.goalText}>{props.text}</Text>
       </View>
