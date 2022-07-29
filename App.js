@@ -28,13 +28,6 @@ export default function App() {
     <View style={styles.appContainer}>
       <GoalInput onAddGoal={addGoalHandler} />
       <View style={styles.goalsContainer}>
-        {/* <ScrollView alwaysBounceVertical={false}>
-          {courseGoals.map((goal) => (
-            <View style={styles.goalItem} key={goal}>
-              <Text style={styles.goalText}>{goal}</Text>
-            </View>
-          ))}
-        </ScrollView> */}
         <FlatList
           data={courseGoals}
           alwaysBounceVertical={false}
